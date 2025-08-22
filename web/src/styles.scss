@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+  --bg: #F9FAFB;
+  --bg-card: #FFFFFF;
+  --bg-primary: #FFD93D;
+  --bg-secondary: #2563EB;
+
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --text-on-primary: #111827;
+  --text-on-secondary: #FFFFFF;
+}
+
+* {
+  color: var(--text-primary);
+}
+
+body {
+  @apply bg-[var(--bg)];
+}
+
+.disable-focus-ring {
+  @apply focus:ring-0 focus:ring-offset-0 focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none;
+}
+
+.badge {
+  background-color: var(--bg-secondary);
+  color: var(--text-on-secondary);
+}

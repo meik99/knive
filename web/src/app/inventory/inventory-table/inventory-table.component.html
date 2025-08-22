@@ -1,0 +1,19 @@
+<div class="flex flex-col gap-1">
+  @for (item of items; track $index) {
+    <div class="flex flex-row rounded-xl shadow-xs p-4 justify-between bg-[var(--bg-card)]">
+      <div class="flex flex-col">
+        {{ item.name }}
+
+        @if (item.place) {
+          <div class="text-sm py-1 px-2 rounded-xl badge mt-2">
+            {{ item.place.name }}
+          </div>
+        }
+      </div>
+      <div class="text-sm py-1 px-2 rounded-xl h-fit bg-[var(--bg-primary)]">
+      {{ item.amount }}
+      {{ item.unit }}
+      </div>
+    </div>
+  }
+</div>
